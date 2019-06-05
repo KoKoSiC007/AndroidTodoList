@@ -1,6 +1,5 @@
 package com.example.todolist;
 
-import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,27 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.CheckBox;
-import android.widget.CheckedTextView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 public class CategoricalAdapter extends BaseExpandableListAdapter {
 
-    private ArrayList<Todo_List> mGroups;
+    private ArrayList<Category> mGroups;
     private Context mContext;
 
-    public CategoricalAdapter(Context context, ArrayList<Todo_List> groups){
+    public CategoricalAdapter(Context context, ArrayList<Category> groups){
         mContext = context;
         mGroups = groups;
     }
 
     @Override
     public int getGroupCount() {
-        Log.d("РАЗМЕР", ""+mGroups.size());
+//        Log.d("РАЗМЕР", ""+mGroups.size());
         return mGroups.size();
     }
 
