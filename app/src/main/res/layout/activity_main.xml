@@ -9,8 +9,49 @@
 
     <ExpandableListView
         android:id="@+id/Categorys"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ExpandableListView>
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+    </ExpandableListView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:background="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="141dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="16dp"
+        android:text="Задачи"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:foreground="@drawable/fab_plus_icon"
+        android:foregroundGravity="center_vertical|center"
+        android:soundEffectsEnabled="false"
+        android:textAlignment="center"
+        android:textDirection="firstStrongRtl"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
+
 </android.support.constraint.ConstraintLayout>
